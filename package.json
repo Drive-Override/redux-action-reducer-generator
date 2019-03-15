@@ -1,0 +1,22 @@
+{
+  "name": "actiongenerator",
+  "version": "1.0.0",
+  "description": "A generator function to automate the creation of redux actions and reducers",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "redux",
+    "action",
+    "generator",
+    "reducer",
+    "generator"
+  ],
+  "author": "Philipp Rost",
+  "license": "MIT",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^6.0.2"
+  }
+}
