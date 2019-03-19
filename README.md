@@ -23,9 +23,9 @@ action constants with REQUEST, SUCCESS and FAILURE slugs.
 Taking our previous example, our redux generator object contains
 the following action constants:
 
-getPosts.REQUEST - GET_POSTS_REQUEST
-getPosts.SUCCESS - GET_POSTS_SUCCESS
-getPosts.FAILURE - GET_POSTS_FAILURE
+- getPosts.REQUEST => GET_POSTS_REQUEST
+- getPosts.SUCCESS => GET_POSTS_SUCCESS
+- getPosts.FAILURE => GET_POSTS_FAILURE
 
 If you want to call the appropriate action all you have to do is
 calling the method containing the request, success or failure function.

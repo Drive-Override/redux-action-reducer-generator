@@ -1,4 +1,4 @@
-function Generator(action) {
+module.exports = function(action) {
     // namespace variable
     const ns = {};
 
@@ -55,5 +55,3 @@ function Generator(action) {
   
     return ns;
 }
-
-module.exports = Generator;
