@@ -1,7 +1,6 @@
 const expect = require("expect.js");
-const generator = require("../index");
+const generator = require("../src");
 const test = generator("set_test");
-
 
 describe("action contants", function() {
   it("should return request action constant", function() {

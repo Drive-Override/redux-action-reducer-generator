@@ -2,20 +2,9 @@
   "name": "actiongenerator",
   "version": "1.0.0",
   "description": "A generator function to automate the creation of redux actions and reducers",
-  "main": "index.js",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  },
-  "release-it": {
-    "github": {
-      "release": true,
-      "tokenRef": "GITHUB_TOKEN"
-    }
-  },
+  "main": "dist/index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "nyc mocha",
     "build": "webpack",
     "release:patch": "better-npm-run release:patch",
     "release:minor": "better-npm-run release:minor",
@@ -50,6 +39,7 @@
   ],
   "author": "Philipp Rost",
   "license": "MIT",
+  "files": ["dist"],
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
@@ -62,5 +52,29 @@
     "release-it": "^10.3.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "nyc": "^13.3.0"
+  },
+  "config": {
+    "husky": {
+      "hooks": {
+        "pre-commit": "npm test"
+      }
+    },
+    "nyc": {
+      "check-coverage": true,
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100,
+      "include": ["src"]
+    },
+    "release-it": {
+      "github": {
+        "release": true,
+        "tokenRef": "GITHUB_TOKEN"
+      }
+    }
   }
 }
