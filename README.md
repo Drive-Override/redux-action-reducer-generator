@@ -1,3 +1,5 @@
+![Travis (.org)](https://img.shields.io/travis/Drive-Override/redux-action-reducer-generator.svg)
+
 ## Intro
 
 The redux-action-reducer package helps to automatically generate default actions and reducers and
