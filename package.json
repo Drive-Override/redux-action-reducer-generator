@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "nyc mocha",
+    "test:watch": "mocha --watch",
     "build": "webpack",
     "release:patch": "better-npm-run release:patch",
     "release:minor": "better-npm-run release:minor",

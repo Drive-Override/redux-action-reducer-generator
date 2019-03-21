@@ -2,7 +2,10 @@ module.exports = function(action) {
     // namespace variable
     const ns = {};
 
-    if (typeof action !== "string") return;
+    if (typeof action !== "string" || !action) {
+      return;
+    }
+
     this.action = action.toUpperCase();
 
     ns.REQUEST = this.action + "_REQUEST";
@@ -30,7 +33,7 @@ module.exports = function(action) {
       response: {}
     };
   
-    ns.reducer = (state = ns.defaultState, action) => {
+    ns.reducer = (state=ns.defaultState, action) => {
       switch (action.type) {
         case ns.REQUEST:
           return Object.assign({}, state, {
