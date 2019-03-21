@@ -60,21 +60,22 @@
   "dependencies": {
     "nyc": "^13.3.0"
   },
+  "nyc": {
+    "check-coverage": true,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "statements": 100,
+    "reporter": [
+      "text",
+      "lcov"
+    ]
+  },
   "config": {
     "husky": {
       "hooks": {
         "pre-commit": "npm test"
       }
-    },
-    "nyc": {
-      "check-coverage": true,
-      "branches": 100,
-      "functions": 100,
-      "lines": 100,
-      "statements": 100,
-      "include": [
-        "src"
-      ]
     },
     "release-it": {
       "github": {
