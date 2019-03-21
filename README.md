@@ -10,7 +10,7 @@ action constants with REQUEST, SUCCESS and FAILURE slugs.
 ```js
   import Generator from "redux-action-reducer-generator";
 
-  const getPosts = Generator("get_posts");
+  const getPosts = new Generator("get_posts");
 
   // Add reducer to store
   const reducers = combineReducers({
@@ -44,11 +44,11 @@ This will trigger the reducer to update the state property ```isLoading``` to tr
 ```
 
 When calling the success method simply pass anything you want to update your sate with.
-This will automatically set the states ```isLoading``` property to false and set the 
+This will automatically set the states ```isLoading``` property to false and set the
 ```done``` property to true.
 
 Same works with the ```.failure("error");``` method. Passing in your error message or object
-will trigger setting the state ```isLoading``` to false as well as in success, but setting 
+will trigger setting the state ```isLoading``` to false as well as in success, but setting
 ```done``` to false.
 
 ---
