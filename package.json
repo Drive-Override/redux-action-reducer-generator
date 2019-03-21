@@ -1,6 +1,6 @@
 {
   "name": "redux-action-reducer-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "github",
     "url": "https://github.com/Drive-Override/redux-action-reducer-generator.git"
