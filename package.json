@@ -10,7 +10,7 @@
   "scripts": {
     "test": "nyc mocha",
     "test:watch": "mocha --watch",
-    "build": "webpack",
+    "build": "babel --out-dir dist src",
     "release:patch": "better-npm-run release:patch",
     "release:minor": "better-npm-run release:minor",
     "release:major": "better-npm-run release:major",
