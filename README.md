@@ -1,4 +1,4 @@
-![Travis (.org)](https://img.shields.io/travis/Drive-Override/redux-action-reducer-generator.svg)
+[![travis][travis]][travis-url] [![codecov][codecov]][codecov-url]
 
 ## Intro
 
@@ -56,3 +56,9 @@ will trigger setting the state ```isLoading``` to false as well as in success, b
 ## Contributing
 
 See [CONTRIBUTE.md](CONTRIBUTE.md).
+
+
+[travis]: https://img.shields.io/travis/Drive-Override/redux-action-reducer-generator.svg?style=flat-square
+[travis-url]: https://img.shields.io/travis/Drive-Override/redux-action-reducer-generator.svg?style=flat-square
+[codecov]: https://img.shields.io/codecov/c/github/Drive-Override/redux-action-reducer-generator.svg?style=flat-square
+[codecov-url]: https://img.shields.io/codecov/c/github/Drive-Override/redux-action-reducer-generator.svg?style=flat-square
