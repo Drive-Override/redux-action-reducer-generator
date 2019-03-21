@@ -1,5 +1,5 @@
 {
-  "name": "actiongenerator",
+  "name": "redux-action-reducer-generator",
   "version": "1.0.0",
   "description": "A generator function to automate the creation of redux actions and reducers",
   "main": "dist/index.js",

@@ -6,7 +6,7 @@ module.exports = {
   mode: "production",
   entry: path.resolve(__dirname, "src"),
   output: {
-    filename: `redux-action-reducer-generator-${version}-min.js`,
+    filename: `index.js`,
     path: path.resolve(__dirname, "dist")
   },
   module: {
